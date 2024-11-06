@@ -1,1 +1,20 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: linear-gradient(90deg, #032030, #00a434);
+}
+
+#simbol,
+#simbol2 {
+  font-size: 100px;
+}
+#card {
+  font-size: 120px;
+}
+#simbol2 {
+  transform: rotate(180deg);
+}
+
+.box {
+  margin: auto;
+  background-color: white;
+  width: 480px;
+}

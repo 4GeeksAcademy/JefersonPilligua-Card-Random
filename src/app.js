@@ -1,35 +1,15 @@
 /* eslint-disable */
+import "./style.css";
 
 window.onload = function() {
   //write your code here
-  function generateRandomCard() {
-    const suits = ["♥️", "♠️", "♣️", "♦️"];
-    const num = [
-      "2",
-      "3",
-      "4",
-      "5",
-      "6",
-      "7",
-      "8",
-      "9",
-      "10",
-      "J",
-      "Q",
-      "K",
-      "A"
-    ];
+  let suit = ["♥️", "♠️", "♣️", "♦️"];
+  let num = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 
-    const randomSuit = suits[Math.floor(Math.random() * suits.length)];
-    const randomNum = num[Math.floor(Math.random() * num.length)];
+  let randomSuit = Math.floor(Math.random() * suit.length);
+  let randomNum = Math.floor(Math.random() * num.length);
 
-    return `${randomSuit} ${randomNum}`;
-  }
-
-  function viewRandomCard() {
-    const elementCard = document.getElementById("card");
-    elementCard.textContent = generateRandomCard();
-  }
-
-  window.addEventListener("load", viewRandomCard);
+  document.querySelector("#simbol").innerHTML = suit[randomSuit];
+  document.querySelector("#card").innerHTML = num[randomNum];
+  document.querySelector("#simbol2").innerHTML = suit[randomSuit];
 };
