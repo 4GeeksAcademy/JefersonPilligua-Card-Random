@@ -12,4 +12,9 @@ window.onload = function() {
   document.querySelector("#simbol").innerHTML = suit[randomSuit];
   document.querySelector("#card").innerHTML = num[randomNum];
   document.querySelector("#simbol2").innerHTML = suit[randomSuit];
+
+  // Función para recargar la página cada 10 segundos
+  setInterval(function() {
+    location.reload();
+  }, 10000); // 10000 milisegundos = 10 segundos
 };
