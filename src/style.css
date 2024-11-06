@@ -18,3 +18,10 @@ body {
   background-color: white;
   width: 480px;
 }
+
+.red {
+  color: red;
+}
+.black {
+  color: black;
+}
